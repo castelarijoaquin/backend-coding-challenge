@@ -3,9 +3,11 @@ package com.propify.challenge.Service;
 import com.propify.challenge.Model.AddressMapper;
 import com.propify.challenge.Model.Property;
 import com.propify.challenge.Model.PropertyReport;
+import org.springframework.stereotype.Service;
 
 import java.util.Collection;
 
+@Service
 public class PropertyService {
 
     PropertyMapper propertyMapper;

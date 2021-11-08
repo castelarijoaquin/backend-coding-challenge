@@ -1,7 +1,5 @@
 package com.propify.challenge.Model;
 
-import com.propify.challenge.Model.PropertyType;
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;

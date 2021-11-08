@@ -1,25 +1,36 @@
 package com.propify.challenge.Model;
 
-import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.junit.jupiter.params.shadow.com.univocity.parsers.annotations.UpperCase;
 
-@AllArgsConstructor
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.validation.constraints.NotNull;
+
+@NoArgsConstructor
 @Setter
 @Getter
 public class Property {
 
-    public int id; // must be null for INSERT and not null for UPDATE
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    public int id;
 
     public String createTime;
 
     public PropertyType type;
 
-    public double rentPrice; // must be greater than 0, 2 decimal places
+    public double rentPrice;
 
-    public Address address; // must not be null
+    @NotNull
+    public Address address;
 
-    public String emailAddress; // must be a valid email address
+    public String emailAddress;
 
-    public String code; // not null, only uppercase letters or numbers, 10 characters
+    @NotNull
+    @UpperCase
+    public String code;
 }
