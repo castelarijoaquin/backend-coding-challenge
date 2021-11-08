@@ -1,5 +1,12 @@
-package com.propify.challenge;
+package com.propify.challenge.Model;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.Setter;
+
+@AllArgsConstructor
+@Setter
+@Getter
 public class Property {
 
     public int id; // must be null for INSERT and not null for UPDATE

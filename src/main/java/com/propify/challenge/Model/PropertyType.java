@@ -1,5 +1,10 @@
-package com.propify.challenge;
+package com.propify.challenge.Model;
 
+import lombok.Getter;
+import lombok.Setter;
+
+@Setter
+@Getter
 public class PropertyType {
 
     public static final PropertyType SINGLE_FAMILY = new PropertyType("Single Family");

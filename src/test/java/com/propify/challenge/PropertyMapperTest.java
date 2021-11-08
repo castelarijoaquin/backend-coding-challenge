@@ -2,6 +2,9 @@ package com.propify.challenge;
 
 import com.github.springtestdbunit.DbUnitTestExecutionListener;
 import com.github.springtestdbunit.annotation.DatabaseSetup;
+import com.propify.challenge.Model.Property;
+import com.propify.challenge.Model.PropertyType;
+import com.propify.challenge.Service.PropertyMapper;
 import org.junit.jupiter.api.Test;
 import org.mybatis.spring.boot.test.autoconfigure.MybatisTest;
 import org.springframework.beans.factory.annotation.Autowired;

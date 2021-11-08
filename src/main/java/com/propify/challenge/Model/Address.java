@@ -1,5 +1,12 @@
-package com.propify.challenge;
+package com.propify.challenge.Model;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.Setter;
+
+@AllArgsConstructor
+@Setter
+@Getter
 public class Address {
 
     public String street; // must not be null or blank
